@@ -1,0 +1,92 @@
+.avisos {
+  background: #f3f3f3;
+  padding: 60px;
+  &__titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    h2 {
+      font-size: 4rem;
+      text-shadow:
+        1px 1px 0px #d33f3e,
+        -1px 1px 0px #d33f3e,
+        -1px -1px 0px #d33f3e,
+        1px -1px 0px #d33f3e;
+      color: #f3f3f3;
+      font-weight: bolder;
+      line-height: 49px;
+    }
+    h3 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-left: 20px;
+      margin-top: -10px;
+      margin-bottom: 60px;
+      line-height: 30px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .item1 {
+    background-image: url("./../../../../../assets/nino-ajuelhado.png");
+  }
+  .item2 {
+    background-image: url("./../../../../../assets/marcio-lino.png");
+  }
+
+  .item3 {
+    background-image: url("./../../../../../assets/multi.png");
+  }
+
+  &__capa {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 3px;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    &__conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(210, 62, 62, 0.4);
+      height: 100%;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      color: #d23e3e;
+      font-weight: bold;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
+      }
+      h2 {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: #000;
+        font-size: 3rem;
+      }
+      p {
+        margin-bottom: 2px;
+        color: #fff;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .avisos__titulos {
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<header>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-3 animate__animated animate__fadeInLeft">
+          <img src="assets/logo.png" class="logo" alt="Logo igreja unida vila carrão - 1958">
+        </div>
+        <div class="col-md-9 col-sm-9 col-9">
+            <div class="menu-icon" (click)="openMenu()">
+              <div class="toggle-nav-btn">
+                <span class="top" [class.active]="menuValue"></span>
+                <span class="middle" [class.active]="menuValue"></span>
+                <span class="botton" [class.active]="menuValue"></span>
+              </div>
+            </div>
+            <div class="desktop_menu" [class.mobile_menu]="menuValue">
+                <ul>
+                    <li routerLink="/" (click)="closeMenu()" class="animate__animated animate__fadeInRight animate__delay-1s">
+                      <a>Inicio</a>
+                    </li>
+                    <li routerLink="/quem-somos"  (click)="closeMenu()" class="animate__animated animate__fadeInRight animate__delay-1s">
+                      <a>Quem somos</a>
+                    </li>
+                    <li (click)="closeMenu()" class="animate__animated animate__fadeInRight animate__delay-1s">
+                      <a>Contribua</a>
+                    </li>
+                    <li (click)="closeMenu()" class="animate__animated animate__fadeInRight animate__delay-1s">
+                      <a>Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+

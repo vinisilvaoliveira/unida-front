@@ -1,0 +1,81 @@
+/* linha 02 */
+.containerMain {
+  width: 100%;
+  padding: 35px 10%;
+  main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 32px;
+
+  }
+}
+
+
+.coluna-00 .content {
+  padding: 0 30px;
+  border-left: solid 2px #bababa;
+}
+
+/* linha 07 */
+.coluna-00 .content .box {
+  position: relative;
+  padding: 10px;
+  border: solid 1px #eaeaea;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 10px;
+}
+
+/* linha 08 */
+.coluna-00 .content .box:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: solid 1px transparent;
+}
+
+/* linha 09 */
+.coluna-00 .content .box::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #D33F3F;
+  border: solid 2px #fff;
+}
+
+/* linha 10 */
+.box h4 {
+  position: relative;
+  color: #D33F3F;
+  font-weight: 600;
+}
+
+/* linha 11 */
+.box h3 {
+  font-size: 18px;
+  padding: 10px 0 6px;
+  color: #313b44;
+}
+
+@media screen and (max-width: 768px) {
+  .containerMain {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  main.row {
+    display: flex!important;
+  }
+
+  .row .coluna-00:nth-child(2) {
+    margin-top: 30px;
+  }
+}

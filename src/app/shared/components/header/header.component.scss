@@ -1,0 +1,122 @@
+header {
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(248,139,70,1) 0%, rgba(228,101,66,1) 35%, rgba(210,62,62,1) 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.desktop_menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  ul {
+    display: flex;
+    margin-bottom: 0;
+    li {
+      list-style-type: none;
+      color: #fff;
+      font-size: 18px;
+      margin-left: 26px;
+      a {
+        position: relative;
+        &::before {
+          content: "";
+          transition: width 0.3s;
+          width: 0%;
+          position: absolute;
+          bottom: -2px;
+          background-color: #F88B46;
+          height: 2px;
+          left: 0;
+        }
+        &:hover {
+        cursor: pointer;
+          &::before {
+              width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (min-width: 128px) and (max-width: 900px) {
+  .desktop_menu {
+    position: fixed !important;
+    right: -280px;
+    transition: 0.4s ease-in-out;
+    top: 83px;
+    background: linear-gradient(90deg, rgba(248,139,70,1) 0%, rgba(228,101,66,1) 35%, rgba(210,62,62,1) 100%);
+    width: 280px;
+    height: 100%;
+    align-items: start;
+    ul {
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0;
+      li {
+        margin: 0;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+      }
+    }
+  }
+  .menu-icon {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    .toggle-nav-btn {
+      padding-left: 28px;
+      transform: translateX(0%);
+      span {
+        display: block;
+        width: 30px;
+        margin-top: 7px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+    }
+
+    .toggle-nav-btn .top.active {
+      width: 30px;
+      background-color: #fff;
+      transform: rotate(-50deg) translate(-10px, 6px);
+      transition: all 0.3s ease-in 0s;
+    }
+
+    .toggle-nav-btn .middle.active {
+        background-color: #fff;
+        animation: burgerMove;
+        animation-duration: 900ms;
+        opacity: 0;
+    }
+
+    .toggle-nav-btn .botton.active {
+      width: 29px;
+      background-color: #fff;
+      transform: rotate(50deg) translate(-5px, -3px);
+      transition: all 0.3s ease-in 0s;
+    }
+  }
+  .mobile_menu {
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+}

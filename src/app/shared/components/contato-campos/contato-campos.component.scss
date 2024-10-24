@@ -1,0 +1,80 @@
+.contact {
+  padding: 100px 0;
+  background-color: rgba(210, 62, 62, 0.3);
+  &__title {
+    display: flex;
+    justify-content: center;
+}
+    h2 {
+
+      font-size: 4rem;
+      text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
+      color: #fff;
+      font-weight: bolder;
+      line-height: 49px;
+    }
+  &__filds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--line {
+        margin: 10px 0;
+        .txt-mensagem {
+            padding: 10px 0;
+            padding-left: 10px;
+            width: 100%;
+            border: none;
+            resize: none;
+        }
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        &__btn {
+          background: linear-gradient(90deg, rgba(248,139,70,1) 0%, rgba(228,101,66,1) 35%, rgba(210,62,62,1) 100%);
+            color: #fff;
+            padding: 15px 30px;
+            border: solid 1px #fff;
+            border-radius: 4px;
+            transition: all 0.3s;
+            position: absolute;
+            &:hover {
+                color: #000;
+                border: none;
+                transform: translate(0, -4px);
+                box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+  }
+}
+
+
+.text-input {
+  font-size: 14px;
+  padding: 10px 14px;
+  border: none;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: 0.1s ease-in;
+  width: 100%;
+  color: #212121;
+  &:hover {
+      box-shadow: 0 9px 6px rgba(255, 255, 255, 0.1);
+  }
+  &:focus {
+      box-shadow: 0 3px 6px rgba(255, 255, 255, 0.9);
+  }
+}
+
+.label {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}

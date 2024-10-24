@@ -1,0 +1,143 @@
+
+.banner-main {
+  background-image: url('./../../../assets/caio-isa.png');
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 121px);
+  .titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #D23E3E;
+    background-color: rgba(24, 23, 22, .2);
+  }
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  h1 {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 5rem;
+    border-radius: 10px;
+    color: #d23e3e;
+    background-color: rgba(24, 23, 22, .4);
+    padding: 10px;
+  }
+  .mySlides {
+    width: 50%;
+    background-color: rgba(24, 23, 22, .4);
+    border-radius: 10px;
+    h2 {
+      font-family: "Londrina Shadow", sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      color: #fff;
+      margin-bottom: 10px;
+      text-align: center;
+      span {
+          font-style: italic;
+      }
+    }
+  }
+}
+
+
+.animation {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+
+.fale-conosco {
+  background-image: url('./../../../assets/frente-unida.png');
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 121px);
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow-container {
+      h1 {
+        font-size: 3rem;
+      }
+      .mySlides {
+        width: 80%;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// .ofertas {
+//   .banner {
+//     background-image: url('./../../../assets/dizimo-banner.png');
+//     position: relative;
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     height: calc(100vh - 121px);
+//     .transparencia {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 100%;
+//       .pix {
+//         background-color: rgba(24, 23, 22, 0.6);
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         font-size: 60px;
+//         text-shadow: 1px 1px 0px #fff, -1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff;
+//         color: #000;
+//         font-weight: bolder;
+//         line-height: 49px;
+//         padding: 15px;
+//       }
+//     }
+//   }
+// }
