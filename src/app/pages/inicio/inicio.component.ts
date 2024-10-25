@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, inject, OnInit, Renderer2 } from '@angular/core';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { HeaderIdiomaEMidiaComponent } from '../../shared/components/header-idioma-e-midia/header-idioma-e-midia.component';
 import { ContatoCamposComponent } from '../../shared/components/contato-campos/contato-campos.component';
@@ -21,12 +21,8 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
   styleUrl: './inicio.component.scss'
 })
 export class InicioComponent implements OnInit {
-
+  readonly renderer = inject(Renderer2)
   slideIndex = 0;
-
-  constructor(
-    private renderer: Renderer2,
-  ) { }
 
   ngOnInit(): void {
     this.showSlides();
@@ -35,7 +31,6 @@ export class InicioComponent implements OnInit {
   showSlides() {
     let i;
     let slides = document.getElementsByClassName('mySlides');
-
 
     for (i = 0; i < slides.length; i++) {
       this.renderer.setStyle(slides[i], 'display', 'none')
@@ -47,7 +42,9 @@ export class InicioComponent implements OnInit {
     this.renderer.setStyle(slides[this.slideIndex - 1], 'display', 'block');
     this.renderer.addClass(slides[this.slideIndex - 1], 'animation');
     setTimeout(() => {
-      this.showSlides();
+      if (window.location.pathname === "/") {
+        this.showSlides();
+      }
     }, 2000);
   }
 }

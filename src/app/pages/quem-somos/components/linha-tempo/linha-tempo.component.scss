@@ -67,22 +67,9 @@
 
 @media screen and (max-width: 768px) {
   .containerMain {
-    background-image: url('./../../../../../assets/quem-somos.png');
-    position: relative;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    .coluna-00 {
-      background-color: rgba(24, 23, 22, .6);
-      padding: 10px;
-    }
     h2 {
       font-size: 2rem;
       text-align: center;
-    }
-    p {
-      color: #fff;
     }
   }
   main.row {
@@ -95,7 +82,7 @@
   .content {
     .box {
       h3 {
-        color: #fff;
+        color: #000;
       }
       h4 {
         color: #D33F3F;

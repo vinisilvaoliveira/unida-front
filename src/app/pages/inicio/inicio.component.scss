@@ -2,11 +2,14 @@
 .banner-main {
   background-image: url('./../../../assets/caio-isa.png');
   position: relative;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: calc(100vh - 121px);
+  // height: calc(100vh - 210px);
+  display: inline-block;
+  width: 100%;
   .titulos {
     display: flex;
     flex-direction: column;
@@ -88,6 +91,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .fale-conosco, .banner-main {
+    background-attachment: scroll;
+  }
   .slideshow-container {
       h1 {
         font-size: 3rem;
