@@ -4,7 +4,7 @@
   position: relative;
   z-index: 999;
   gap: 10px;
-  margin-top: -60px;
+  margin-top: -80px;
   .item {
     width: 350px;
     height: 650px;
@@ -17,7 +17,6 @@
       color: #d23e3e;
     }
     h2 {
-      color: #000;
       font-weight: bold;
       font-size: 1.5rem;
       margin-bottom: 20px;
@@ -55,6 +54,29 @@
 
 @media screen and (max-width: 768px) {
   .missao-visao-valores {
+    margin-top: -75px;
+    .item {
+      width: 240px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .missao-visao-valores {
     flex-direction: column;
+    align-items: center;
+    margin-top: -76px;
+  }
+  .item {
+    width: 240px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+  }
+  .item2 {
+    width: 240px;
+    height: inherit;
+    margin-top: 0!important;
+    padding-top: 20px!important;
   }
 }

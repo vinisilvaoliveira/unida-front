@@ -79,14 +79,29 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .avisos__titulos {
-    h2 {
-      font-size: 2rem;
+  .avisos {
+    &__titulos {
+      h2 {
+        font-size: 2rem;
+        line-height: 30px;
+      }
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+      }
     }
-    h3 {
-      font-size: 1.5rem;
+    a {
+      flex-direction: column;
+      .avisos__capa {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

@@ -4,15 +4,15 @@
   &__title {
     display: flex;
     justify-content: center;
-}
-    h2 {
+  }
+  h2 {
 
-      font-size: 4rem;
-      text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
-      color: #fff;
-      font-weight: bolder;
-      line-height: 49px;
-    }
+    font-size: 4rem;
+    text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 49px;
+  }
   &__filds {
     display: flex;
     flex-direction: column;
@@ -77,4 +77,20 @@
   display: block;
   text-align: left;
   margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .contact {
+    &__title {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    &__filds {
+      &--line {
+        width: 100%;
+      }
+    }
+  }
 }
