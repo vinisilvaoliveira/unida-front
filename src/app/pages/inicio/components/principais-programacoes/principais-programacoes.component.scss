@@ -33,7 +33,7 @@
     background-image: url("./../../../../../assets/nino-ajuelhado.png");
   }
   .item2 {
-    background-image: url("./../../../../../assets/marcio-lino.png");
+    background-image: url("./../../../../../assets/pam-caique.png");
   }
 
   .item3 {
@@ -67,7 +67,7 @@
       }
       h2 {
         font-family: "Rubik Wet Paint", system-ui;
-        color: #000;
+        color: #fff;
         font-size: 3rem;
       }
       p {
@@ -81,28 +81,41 @@
 
 @media screen and (max-width: 768px) {
   .avisos {
-    &__titulos {
-      white-space: inherit;
-      h2 {
-        font-size: 1.4rem;
-        line-height: 30px;
-      }
-      h3 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-        line-height: 30px;
-      }
-    }
     a {
       flex-direction: column;
       .avisos__capa {
         margin-bottom: 20px;
         h2 {
-          font-size: 2rem;
+          font-size: 3rem;
         }
         p {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .avisos {
+    padding: 30px 0;
+    &__titulos {
+      white-space: inherit;
+      h2 {
+        font-size: 2rem;
+        line-height: 30px;
+      }
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        line-height: 30px;
+      }
+    }
+    a {
+      .avisos__capa {
+        margin: 10px 0;
+        height: 300px;
       }
     }
   }

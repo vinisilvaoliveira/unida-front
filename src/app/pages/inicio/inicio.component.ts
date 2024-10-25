@@ -5,6 +5,7 @@ import { ContatoCamposComponent } from '../../shared/components/contato-campos/c
 import { MissaoVisaoValoresComponent } from './components/missao-visao-valores/missao-visao-valores.component';
 import { PrincipaisProgramacoesComponent } from './components/principais-programacoes/principais-programacoes.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
+import { DadosService } from '../../shared/services/dados.service';
 
 @Component({
   selector: 'app-inicio',
@@ -22,9 +23,12 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
 })
 export class InicioComponent implements OnInit {
   readonly renderer = inject(Renderer2)
+  private dadosService = inject(DadosService)
   slideIndex = 0;
+  idiomaEN: any;
 
   ngOnInit(): void {
+    this.idiomaEN = this.dadosService.getIdioma();
     this.showSlides();
   }
 

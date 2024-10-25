@@ -67,16 +67,17 @@
     align-items: center;
     margin-top: -76px;
     margin-bottom: 30px;
-  }
-  .item {
-    width: 240px;
-    margin-bottom: 60px;
-    border-radius: 10px;
-  }
-  .item2 {
-    width: 240px;
-    height: inherit;
-    margin-top: 0!important;
-    padding-top: 20px!important;
+    padding: 0 20px 0;
+    .item {
+      border-radius: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .item2 {
+      height: inherit;
+      margin-top: 0!important;
+      padding-top: 20px!important;
+    }
   }
 }

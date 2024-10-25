@@ -15,6 +15,6 @@ export class ContatoCamposComponent {
 
   enviar() {
     console.log('teste')
-    this.toastService.success("E-mail enviado com sucesso!");
+    this.toastService.success("Mensagem enviada com sucesso!");
   }
 }

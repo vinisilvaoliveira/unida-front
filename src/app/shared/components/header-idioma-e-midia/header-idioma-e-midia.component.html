@@ -17,15 +17,22 @@
 
 
     <div class="segundo-header__idioma animate__animated animate__slideInRight">
-      <button class="segundo-header__idioma btn"
-      [style.background-color]="true ? 'rgba(24, 23, 22, 0.3)' : ''"
-      [style.color]="true ? '#fff' : ''"
+      <button
+      (click)="setIdioma(false)"
+      class="segundo-header__idioma btn"
+      [style.background-color]="!idiomaEN ? 'rgba(24, 23, 22, 0.3)' : ''"
+      [style.color]="!idiomaEN ? '#fff' : '#000'"
       >
         <img src="assets/idiomas/bandeira-PT.jpg">
         <span>&nbsp;Português</span>
       </button>
 
-      <button class="segundo-header__idioma btn">
+      <button
+      (click)="setIdioma(true)"
+      class="segundo-header__idioma btn"
+      [style.background-color]="idiomaEN ? 'rgba(24, 23, 22, 0.3)' : ''"
+      [style.color]="idiomaEN ? '#fff' : '#000'"
+      >
         <img src="assets/idiomas/bandeira-ENG.jpg">
         <span span>&nbsp;English</span>
       </button>

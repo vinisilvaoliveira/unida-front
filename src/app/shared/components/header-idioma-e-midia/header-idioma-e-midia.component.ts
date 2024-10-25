@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DadosService } from '../../services/dados.service';
 
 @Component({
   selector: 'app-header-idioma-e-midia',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './header-idioma-e-midia.component.html',
   styleUrl: './header-idioma-e-midia.component.scss'
 })
-export class HeaderIdiomaEMidiaComponent {
+export class HeaderIdiomaEMidiaComponent{
+  private dadosService = inject(DadosService);
 
+  idiomaEN: any;
+
+  setIdioma(valor: boolean) {
+    this.dadosService.setIdioma(valor);
+    this.idiomaEN = valor;
+  }
 }

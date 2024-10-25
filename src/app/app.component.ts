@@ -10,6 +10,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   onActivate(): void {
-    window.scroll(0, 0);
+    window.scroll(0, 0)
   }
 }
