@@ -1,16 +1,28 @@
-// cor cima: #F88B46
-// Cor baixo: #D23E3E
+@import "./app/styles/variables.scss";
 
 @import 'ngx-toastr/toastr';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: $font-principal;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-titulo;
+}
+
+i {
+  color: #d3423d;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
+}
 
+.texto-gradiente {
+  background: -webkit-linear-gradient(#f88b37, #d3423d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

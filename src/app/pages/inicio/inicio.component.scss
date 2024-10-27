@@ -1,85 +1,4 @@
-
-.banner-main {
-  background-image: url('./../../../assets/caio-isa.png');
-  position: relative;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: calc(100vh - 121px);
-  // height: calc(100vh - 210px);
-  display: inline-block;
-  width: 100%;
-  .titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: #D23E3E;
-    background-color: rgba(24, 23, 22, .2);
-  }
-}
-
-.slideshow-container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  h1 {
-    font-family: "Rubik Wet Paint", system-ui;
-    font-size: 5rem;
-    border-radius: 10px;
-    color: #FFF;
-    background-color: rgba(24, 23, 22, .4);
-    padding: 10px;
-  }
-  .mySlides {
-    width: 50%;
-    background-color: rgba(24, 23, 22, .4);
-    border-radius: 10px;
-    h2 {
-      font-family: "Londrina Shadow", sans-serif;
-      font-weight: 800;
-      font-size: 4rem;
-      color: #fff;
-      margin-bottom: 10px;
-      text-align: center;
-      span {
-          font-style: italic;
-      }
-    }
-  }
-}
-
-
-.animation {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@-webkit-keyframes slide-left {
-  0% {
-      -webkit-transform: translateX(500px);
-      transform: translateX(500px);
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
-}
-@keyframes slide-left {
-  0% {
-      -webkit-transform: translateX(500px);
-      transform: translateX(500px);
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
-}
+@import "./../../../app/styles/variables.scss";
 
 .fale-conosco {
   background-image: url('./../../../assets/frente-unida.png');
@@ -89,32 +8,6 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-@media screen and (max-width: 768px) {
-  .fale-conosco, .banner-main {
-    background-attachment: scroll;
-  }
-  .slideshow-container {
-      h1 {
-        font-size: 3rem;
-      }
-      .mySlides {
-        width: 80%;
-        h2 {
-          font-size: 3rem;
-        }
-      }
-    }
-}
-
-
-
-
-
-
-
-
-
 
 // .ofertas {
 //   .banner {

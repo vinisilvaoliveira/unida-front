@@ -1,0 +1,87 @@
+@import "./../../../../styles/variables.scss";
+
+.banner {
+  background-image: url('./../../../../../assets/caio-isa.png');
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 121px);
+  display: inline-block;
+  width: 100%;
+  .slideshow-container {
+    overflow: hidden;
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 5rem;
+      border-radius: 10px;
+      color: $cor-branca;
+      background-color: $fundo-preto-transparencia;
+      padding: 10px;
+      text-align: center;
+    }
+    .mySlides {
+      width: 80%;
+      background-color: $fundo-preto-transparencia;
+      border-radius: 10px;
+      h2 {
+        font-weight: 800;
+        font-size: 4rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fale-conosco, .banner {
+    background-attachment: scroll;
+  }
+  .banner {
+    .slideshow-container {
+        h1 {
+          font-size: 3rem;
+        }
+        .mySlides {
+          width: 100%;
+          h2 {
+            font-size: 3rem;
+          }
+        }
+      }
+  }
+}
+
+
+.animation {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}

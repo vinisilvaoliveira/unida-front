@@ -1,29 +1,19 @@
 <app-header/>
+
 <app-header-idioma-e-midia/>
 
-<section class="banner-main">
-  <div class="slideshow-container">
-    <h1 class="animate__animated animate__bounceInLeft">{{ idiomaEN() ? 'Church Unida' : 'Igreja Unida' }}</h1>
-    <div class="mySlides" >
-      <h2 class="description">
-        {{ idiomaEN() ? 'Connected with People' :  'Conectados Com Pessoas' }}
-      </h2>
-    </div>
-    <div class="mySlides">
-      <h2 class="description">
-        {{ idiomaEN() ? 'Ahining the Light of JESUS' : 'Brilhando a Luz de JESUS' }}
-      </h2>
-    </div>
-  </div>
-
-</section>
-
+<app-banner [idiomaEN]="idiomaEN()"/>
 
 <app-missao-visao-valores/>
 
 <app-principais-programacoes/>
 
+<section class="fale-conosco">
+  <app-contato-campos/>
+ </section>
 
+
+ <app-footer/>
 
 <!-- <section class="ofertas">
   <div class="banner">
@@ -36,9 +26,4 @@
   </div>
 </section> -->
 
-<section class="fale-conosco">
- <app-contato-campos/>
-</section>
 
-
-<app-footer/>

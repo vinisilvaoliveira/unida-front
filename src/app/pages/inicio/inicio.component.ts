@@ -6,6 +6,7 @@ import { MissaoVisaoValoresComponent } from './components/missao-visao-valores/m
 import { PrincipaisProgramacoesComponent } from './components/principais-programacoes/principais-programacoes.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { DadosService } from '../../shared/services/dados.service';
+import { BannerComponent } from './components/banner/banner.component';
 
 @Component({
   selector: 'app-inicio',
@@ -13,9 +14,10 @@ import { DadosService } from '../../shared/services/dados.service';
   imports: [
     HeaderComponent,
     HeaderIdiomaEMidiaComponent,
-    ContatoCamposComponent,
+    BannerComponent,
     MissaoVisaoValoresComponent,
     PrincipaisProgramacoesComponent,
+    ContatoCamposComponent,
     FooterComponent
   ],
   templateUrl: './inicio.component.html',
