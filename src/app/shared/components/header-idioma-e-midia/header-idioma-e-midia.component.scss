@@ -8,7 +8,11 @@
     justify-content: flex-end;
     align-items: center;
     a {
-      padding: 5px;
+      i {
+        color: #9f9f9f;
+        font-size: 16px;
+      }
+      padding-right: 10px;
       img {
         margin-right: 6px;
       }
@@ -22,8 +26,8 @@
 
 @media screen and (max-width: 768px) {
   .segundo-header {
-    &__idioma, &__reder-sociais {
-      a, button {
+    &__idioma {
+      button {
         padding: 5px;
         span {
           font-size: 12px;
