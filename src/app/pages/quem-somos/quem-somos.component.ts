@@ -3,6 +3,7 @@ import { HeaderIdiomaEMidiaComponent } from '../../shared/components/header-idio
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { LinhaTempoComponent } from './components/linha-tempo/linha-tempo.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
+import { NossaHistoriaComponent } from './components/nossa-historia/nossa-historia.component';
 
 @Component({
   selector: 'app-quem-somos',
@@ -10,6 +11,7 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
   imports: [
     HeaderComponent,
     HeaderIdiomaEMidiaComponent,
+    NossaHistoriaComponent,
     LinhaTempoComponent,
     FooterComponent
   ],

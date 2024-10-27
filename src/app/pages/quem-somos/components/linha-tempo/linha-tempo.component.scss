@@ -1,19 +1,10 @@
 /* linha 02 */
-.containerMain {
-  width: 100%;
-  padding: 35px 10%;
-  main.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  h2 {
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
-    color: #fff;
-    font-weight: bolder;
-    margin-bottom: 32px;
-
-  }
+h2 {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 0px #D33F3E, -1px 1px 0px #D33F3E, -1px -1px 0px #D33F3E, 1px -1px 0px #D33F3E;
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 32px;
 }
 
 
@@ -66,17 +57,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .containerMain {
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-    }
-  }
-  main.row {
-    display: flex!important;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .row .coluna-00:nth-child(2) {
+  .coluna-00:nth-child(2) {
     margin-top: 30px;
   }
   .content {
