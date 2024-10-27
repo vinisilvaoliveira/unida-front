@@ -9,6 +9,12 @@
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 700px) {
+  .fale-conosco {
+    background-attachment: scroll;
+  }
+}
+
 // .ofertas {
 //   .banner {
 //     background-image: url('./../../../assets/dizimo-banner.png');
