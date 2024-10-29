@@ -8,11 +8,14 @@
     justify-content: flex-end;
     align-items: center;
     a {
+      padding: 0 7px;
+      &:first-child {
+        padding-left: 0;
+      }
       i {
         color: #9f9f9f;
         font-size: 16px;
       }
-      padding-right: 10px;
       img {
         margin-right: 6px;
       }
