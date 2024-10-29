@@ -1,0 +1,63 @@
+.ofertas {
+  .banner {
+    background-image: url('./../../../assets/dizimo-banner.png');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    height: calc(75vh);
+
+  }
+  .transparencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    .pix {
+      background-color: rgba(24, 23, 22, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000;
+      color: #fff;
+      font-weight: bolder;
+      line-height: 32px;
+      padding: 15px;
+      margin-bottom: 10px;
+      z-index: 99;
+      border-radius: 15px;
+      h2 {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ofertas {
+    .banner {
+      background-size: cover;
+      background-attachment: scroll;
+      height: 45vh;
+      .transparencia {
+        .pix {
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ofertas {
+    .banner {
+      background-position: top;
+      height: calc(27vh);
+    }
+  }
+}
