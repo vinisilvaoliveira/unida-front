@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContribuaComponent {
 
+  copiarTexto() {
+    navigator.clipboard.writeText('05.552.672.0001-80')
+  }
 }

@@ -1,4 +1,5 @@
 .ofertas {
+  background-color: #f3f3f3;
   .banner {
     background-image: url('./../../../assets/dizimo-banner.png');
     position: relative;
@@ -6,21 +7,28 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    height: calc(75vh);
-
+    height: calc(68vh);
+  }
+  .descricao {
+    p {
+      font-size: 1.5rem;
+      color: #000;
+      line-height: 28px;
+      margin: 30px 0 0;
+    }
   }
   .transparencia {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    justify-content: space-between;
+    padding: 30px 0;
     .pix {
-      background-color: rgba(24, 23, 22, 0.3);
+      width: 48%;
+      background: linear-gradient(90deg, rgb(248, 139, 70) 0%, rgb(228, 101, 66) 50%, rgb(210, 62, 62) 100%);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000;
       color: #fff;
       font-weight: bolder;
       line-height: 32px;
@@ -31,9 +39,27 @@
       h2 {
         font-size: 2rem;
       }
-      span {
-        font-size: 1.5rem;
+      .copiar-pix {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        span {
+          font-size: 1.5rem;
+        }
+        button {
+          color: #fff;
+          &:hover {
+            color: #000;
+            i {
+              color: #000;
+            }
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
       }
+
     }
   }
 }
@@ -44,11 +70,6 @@
       background-size: cover;
       background-attachment: scroll;
       height: 45vh;
-      .transparencia {
-        .pix {
-
-        }
-      }
     }
   }
 }
@@ -58,6 +79,18 @@
     .banner {
       background-position: top;
       height: calc(27vh);
+    }
+    .transparencia {
+      flex-direction: column;
+      width: 100%;
+      .pix {
+        width: 100%;
+        .copiar-pix {
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
 }
