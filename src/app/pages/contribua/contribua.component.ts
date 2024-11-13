@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import copy from 'copy-to-clipboard';
 
 @Component({
   selector: 'app-contribua',
@@ -10,6 +11,6 @@ import { Component } from '@angular/core';
 export class ContribuaComponent {
 
   copiarTexto() {
-    navigator.clipboard.writeText('05.552.672.0001-80')
+    copy('05.552.672.0001-80');
   }
 }

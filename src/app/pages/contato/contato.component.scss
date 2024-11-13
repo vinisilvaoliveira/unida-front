@@ -1,5 +1,3 @@
-@import "./../../../app/styles/variables.scss";
-
 .fale-conosco {
   background-image: url('./../../../assets/frente-unida.png');
   position: relative;
@@ -7,11 +5,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 60vh;
+  height: calc(100vh - 180px);
 }
 
 @media screen and (max-width: 700px) {
   .fale-conosco {
     background-attachment: scroll;
+    height: calc(100vh - 244px);
   }
 }
