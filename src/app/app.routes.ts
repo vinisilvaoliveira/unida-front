@@ -5,6 +5,8 @@ import { ContribuaComponent } from './pages/contribua/contribua.component';
 import { FundamentosFeComponent } from './pages/fundamentos-fe/fundamentos-fe.component';
 import { ValoresComponent } from './pages/valores/valores.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { MinisteriosComponent } from './pages/ministerios/ministerios.component';
+import { ProgramacoesComponent } from './pages/programacoes/programacoes.component';
 
 export const routes: Routes = [
   {
@@ -31,6 +33,12 @@ export const routes: Routes = [
     path: "contato",
     component: ContatoComponent
   },
-
-
+  {
+    path: "ministerios",
+    component: MinisteriosComponent
+  },
+  {
+    path: "programacoes",
+    component: ProgramacoesComponent
+  }
 ];
