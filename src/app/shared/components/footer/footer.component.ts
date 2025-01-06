@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { DadosService } from '../../services/dados.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
+  private dadosService = inject(DadosService)
+  idiomaEN: any;
 
+  constructor() {}
+
+  ngOnInit(): void {
+    this.idiomaEN = this.dadosService.getIdioma();
+  }
 }

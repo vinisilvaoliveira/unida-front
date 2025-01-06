@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,5 +13,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './missao-visao-valores.component.scss'
 })
 export class MissaoVisaoValoresComponent {
-
+  @Input() idiomaEN: boolean = false;
 }

@@ -1,8 +1,8 @@
 <section class="avisos" >
   <div class="container">
    <div class="avisos__titulos">
-     <h2>Fique por dentro</h2>
-     <h3>das principais programações</h3>
+     <h2>{{ idiomaEN ? 'Stay in the know' : 'Fique por dentro' }}</h2>
+     <h3>{{ idiomaEN ? 'of the main programs' : 'das principais programações' }}</h3>
    </div>
 
    <a href="https://www.youtube.com/@iunidatv2281/streams" target="_blank"
@@ -11,18 +11,19 @@
    >
     <div class="avisos__capa item1">
       <div class="avisos__capa__conteudo">
-        <h2>segunda</h2>
+        <h2>{{ idiomaEN ? 'monday' : 'segunda' }}</h2>
         <p>
           <i class="bi bi bi-check-all"></i>
-          às 8h Começando com Deus
+          {{ idiomaEN ? 'at 8am Starting with God' : 'às 8h Começando com Deus' }}
         </p>
-        <span>Encontro presencial</span>
+        <span>{{ idiomaEN ? 'Presential' : 'Encontro presencial' }}</span>
         <br>
         <p>
           <i class="bi bi bi-check-all"></i>
-          às 20h Famílias em Oração
+          {{ idiomaEN ? 'at 8pm Families in Prayer' : ' às 20h Famílias em Oração' }}
+
         </p>
-        <span> Encontro Online
+        <span> {{ idiomaEN ? 'Online Meeting' : 'Encontro Online' }}
           <i class="bi bi-youtube"></i>
           <i class="bi bi-facebook"></i>
         </span>
@@ -32,29 +33,31 @@
 
     <div class="avisos__capa item3">
       <div class="avisos__capa__conteudo">
-        <h2>domingo</h2>
+        <h2>{{ idiomaEN ? 'sunday' : 'domingo' }}</h2>
 
         <p>
           <i class="bi bi-check-all"></i>
-          às 9h45 Oração
+          {{ idiomaEN ? 'at 9:45 am Prayer' : 'às 9h45 Oração' }}
         </p>
         <br>
         <p>
           <i class="bi bi-check-all"></i>
-          às 10h30 Culto de Celebração
+          {{ idiomaEN ? 'at 10:30 am Celebration Service' : 'às 10h30 Culto de Celebração' }}
+
           <br>
-          No 2° domingo do mês celebramos a Santa Ceia
+          {{ idiomaEN ? 'On the 2nd Sunday of the month we celebrate Holy Supper' : 'No 2° domingo do mês celebramos a Santa Ceia' }}
+
         </p>
       </div>
     </div>
 
     <div class="avisos__capa item2">
       <div class="avisos__capa__conteudo">
-        <h2>sábado <br> Aviva Jovem </h2>
+        <h2>{{ idiomaEN ? 'saturday' : 'sábado' }} <br> {{ idiomaEN ? 'Aviva Young' : 'Aviva Jovem' }}</h2>
         <span></span>
         <p>
           <i class="bi bi-check-all"></i>
-          às 19h30, no último sábado do mês
+          {{ idiomaEN ? 'at 7:30 pm, on the last Saturday of the month' : 'às 19h30, no último sábado do mês' }}
         </p>
       </div>
     </div>

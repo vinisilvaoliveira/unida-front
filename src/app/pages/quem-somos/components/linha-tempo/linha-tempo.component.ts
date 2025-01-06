@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-linha-tempo',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './linha-tempo.component.scss'
 })
 export class LinhaTempoComponent {
-
+  @Input() idiomaEN: boolean = false;
 }

@@ -2,25 +2,26 @@
   <div class="missao-visao-valores">
     <div class="item animate__animated animate__fadeInLeft animate__delay-1s">
       <i class="bi bi-eye icone"></i>
-      <h2>Nossa igreja</h2>
-      <p>É com grande alegria que recebemos sua visita. Somos uma comunidade constituída de pessoas semelhantes a você. Será uma honra celebrar a vida em sua companhia.</p>
-      <button routerLink="/quem-somos" class="btn">VER MAIS</button>
+      <h2>{{ idiomaEN ? 'Our church' : 'Nossa igreja' }}</h2>
+      <p>{{ idiomaEN ? 'It is with great joy that we welcome your visit. We are a community made up of people similar to you. It will be an honor to celebrate life in your company.' : 'É com grande alegria que recebemos sua visita. Somos uma comunidade constituída de pessoas semelhantes a você. Será uma honra celebrar a vida em sua companhia.' }}</p>
+      <button routerLink="/quem-somos" class="btn">{{ idiomaEN ? 'SEE MORE' : 'VER MAIS' }}</button>
     </div>
     <div class="item item2 animate__animated animate__flash">
       <i class="bi bi-journal-text icone"></i>
-      <h2>Fundamentos da Fé</h2>
+      <h2>{{ idiomaEN ? 'Foundations of Faith' : 'Fundamentos da Fé' }}</h2>
       <p>
-        A nossa fé sustenta algumas convicções que originam nossa doutrina. Conheça a verdade que orienta a direção de nossa comunidade.
+        {{ idiomaEN ? 'Our faith supports some convictions that originate our doctrine. Learn the truth that guides the direction of our community.' : ' A nossa fé sustenta algumas convicções que originam nossa doutrina. Conheça a verdade que orienta a direção de nossa comunidade.' }}
+
       </p>
-      <button routerLink="/quem-somos/fundamentos-fe" class="btn">VER MAIS</button>
+      <button routerLink="/quem-somos/fundamentos-fe" class="btn">{{ idiomaEN ? 'SEE MORE' : 'VER MAIS' }}</button>
     </div>
     <div class="item animate__animated animate__fadeInRight animate__delay-1s">
       <i class="bi bi-house-heart icone"></i>
-      <h2>Valores Unida</h2>
+      <h2>{{ idiomaEN ? 'Unida Values' : 'Valores Unida' }}</h2>
       <p>
-        Conheça melhor nossa missão e vidão que direcionam nossa caminhada com a comunidade.
+        {{ idiomaEN ? 'Learn more about our mission and life that guide our journey with the community.' : 'Conheça melhor nossa missão e vidão que direcionam nossa caminhada com a comunidade.' }}
       </p>
-      <button routerLink="/quem-somos/valores" class="btn">VER MAIS</button>
+      <button routerLink="/quem-somos/valores" class="btn">{{ idiomaEN ? 'SEE MORE' : 'VER MAIS' }}</button>
     </div>
   </div>
   </section>
