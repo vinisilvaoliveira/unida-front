@@ -33,7 +33,7 @@
     background-image: url("./../../../../../assets/nino-ajuelhado.png");
   }
   .item2 {
-    background-image: url("./../../../../../assets/pam-caique.png");
+    background-image: url("./../../../../../assets/ministerios/teens.png");
   }
 
   .item3 {
@@ -54,7 +54,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgba(210, 62, 62, 0.6);
+      // background-color: rgba(210, 62, 62, 0.6);
+      background-color: rgba(24, 23, 22, 0.6); 
       height: 100%;
       border-radius: 15px;
       padding: 15px;
@@ -67,7 +68,7 @@
       }
       h2 {
         color: #fff;
-        font-size: 3rem;
+        font-size: 2rem;
       }
       span {
         i {
@@ -75,7 +76,7 @@
           margin-right: 5px;
         }
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1rem;
         line-height: 32px;
       }
       p {
@@ -95,10 +96,10 @@
       .avisos__capa {
         margin-bottom: 20px;
         h2 {
-          font-size: 3rem;
+          font-size: 2.3rem;
         }
         p {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
 
         }
       }

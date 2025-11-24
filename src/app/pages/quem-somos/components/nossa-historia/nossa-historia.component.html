@@ -1,51 +1,83 @@
 <section class="nossa-historia">
-  <h2>Nossa História</h2>
-<p>
-  A nossa igreja foi fundada em 31 de dezembro de 1958, na residência dos
-  irmãos José Espinosa e Carmem Alavêz Espinosa, localizada na Rua Areião,
-  25 – Tatuapé/SP – SP, sendo seu nome de fundação Igreja Cristã Evangélica
-  Unida. O primeiro presidente foi o Pr Eurico de Almeida Vieira.
-</p>
-<p>
-  Em 19 de abril de 1959 foi inaugurado o primeiro templo, localizado à Rua
-  Doraliza, 421 – Vila Carrão/SP – SP e em 1962 foi criado o fundo para
-  aquisição e construção do templo próprio, onde nos reunimos até hoje.
-</p>
-<p>
-  Em julho de 1963 aconteceu a fusão da Igreja Cristã Evangélica Unida
-  (dirigida pelos pastores Francisco Cardoso e Luiz Reynaldo Ferreira),
-  Igreja Pentecostal de Evangelização e Cura Divina (dirigida pelos pastores
-  Simão Moreno, Leonel da Silva, Isaias Spassapan, Samuel Spassapan, José
-  Maria Aires e Valter Marques de Melo) e a Igreja Evangélica Pentecostal do
-  Povo (dirigida pelo missionário Luiz Schiliró, pastores José Spassapan,
-  Vitoriano de Souza e José Candido Pereira).
-</p>
-<p>
-  Na ocasião da fusão, a Igreja de Vila Carrão tinha as seguintes
-  congregações: Penha, Vila Santo Estevam, Água Rasa, Vila Diva, Vila Buenos
-  Aires, Guaianazes e Vila Prudente.
-</p>
-<p>
-  A fusão resultou na criação da Igreja Evangélica Pentecostal Unida, tendo
-  na direção o missionário Luiz Schiliró e o pastor Samuel Spassapan.
-  Posteriormente, o nome foi alterado para Igreja Unida e criada a Convenção
-  Unida Internacional, que agrega todas as igrejas de nossa denominação,
-  dirigida, atualmente, pelo pastor Leonardo Meyer.
-</p>
-<p>
-  Em 4 de outubro de 1964 foi inaugurado o templo atual da Igreja Unida de
-  Vila Carrão, tendo por presidente o pastor Francisco Cardoso. Também eram
-  vinculadas à Unida de Vila Carrão, as congregações de Parque Sevilha,
-  Utinga e Ipiranga.
-</p>
-<p>
-  Em 2018 a Igreja Unida de Vila Carrão comemorou 60 anos. Nesse período
-  cumpriu sua missão de pregar o evangelho de Jesus a todos. Nossos pastores
-  nesses primeiros 60 anos:
-</p>
+  <h2>{{ idiomaEN ? 'Our History' : 'Nossa História' }}</h2>
+  <p>
+    {{ idiomaEN ? 
+      'Our church was founded on December 31, 1958, at the residence of
+    brothers José Espinosa and Carmem Alavêz Espinosa, located at Rua Areião,
+    25 – Tatuapé/SP – SP, its founding name being United Evangelical Christian Church.
+    The first president was Pastor Eurico de Almeida Vieira.' :
+    'A nossa igreja foi fundada em 31 de dezembro de 1958, na residência dos
+    irmãos José Espinosa e Carmem Alavêz Espinosa, localizada na Rua Areião,
+    25 – Tatuapé/SP – SP, sendo seu nome de fundação Igreja Cristã Evangélica
+    Unida. O primeiro presidente foi o Pr Eurico de Almeida Vieira.' }}
+
+  </p>
+  <p>
+    {{ idiomaEN ?
+      'On April 19, 1959, the first temple was inaugurated, located at Rua Doraliza, 421 – Vila Carrão/SP – SP, and in 1962 a fund was created for the acquisition and construction of our own temple, where we still meet today.':
+      'Em 19 de abril de 1959 foi inaugurado o primeiro templo, localizado à Rua
+      Doraliza, 421 – Vila Carrão/SP – SP e em 1962 foi criado o fundo para
+      aquisição e construção do templo próprio, onde nos reunimos até hoje.'
+    }}
+  </p>
+
+  <p>
+    {{ idiomaEN ?
+      'In July 1963, the United Evangelical Christian Church (led by pastors Francisco Cardoso and Luiz Reynaldo Ferreira),
+      Pentecostal Church of Evangelization and Divine Healing (led by pastors
+      Simão Moreno, Leonel da Silva, Isaias Spassapan, Samuel Spassapan, José
+      Maria Aires and Valter Marques de Melo) and the Peoples Pentecostal Evangelical Church (led by missionary Luiz Schiliró, pastors José Spassapan,
+      Vitoriano de Souza and José Candido Pereira) merged.' :
+      'Em julho de 1963 aconteceu a fusão da Igreja Cristã Evangélica Unida
+      (dirigida pelos pastores Francisco Cardoso e Luiz Reynaldo Ferreira),
+      Igreja Pentecostal de Evangelização e Cura Divina (dirigida pelos pastores
+      Simão Moreno, Leonel da Silva, Isaias Spassapan, Samuel Spassapan, José
+      Maria Aires e Valter Marques de Melo) e a Igreja Evangélica Pentecostal do
+      Povo (dirigida pelo missionário Luiz Schiliró, pastores José Spassapan,
+      Vitoriano de Souza e José Candido Pereira).'
+    }}
+  </p>
+  <p>
+    {{ idiomaEN ?
+      'At the time of the merger, the Vila Carrão Church had the following congregations: Penha, Vila Santo Estevam, Água Rasa, Vila Diva, Vila Buenos Aires, Guaianazes and Vila Prudente.':
+      'Na ocasião da fusão, a Igreja de Vila Carrão tinha as seguintes
+      congregações: Penha, Vila Santo Estevam, Água Rasa, Vila Diva, Vila Buenos
+      Aires, Guaianazes e Vila Prudente.'
+    }}
+  </p>
+  <p>
+     {{ idiomaEN ?
+      'The merger resulted in the creation of the United Pentecostal Evangelical Church, led by missionary Luiz Schiliró and pastor Samuel Spassapan. Later, the name was changed to United Church and the United International Convention was created, which brings together all the churches of our denomination, currently led by pastor Leonardo Meyer.' :
+      'A fusão resultou na criação da Igreja Evangélica Pentecostal Unida, tendo
+      na direção o missionário Luiz Schiliró e o pastor Samuel Spassapan.
+      Posteriormente, o nome foi alterado para Igreja Unida e criada a Convenção
+      Unida Internacional, que agrega todas as igrejas de nossa denominação,
+      dirigida, atualmente, pelo pastor Leonardo Meyer.'
+     }}
+  </p>
+  <p>
+    {{ idiomaEN ?
+      'On October 4, 1964, the current temple of the United Church of Vila Carrão was inaugurated, with Pastor Francisco Cardoso as its president.
+      The congregations of Parque Sevilha, Utinga, and Ipiranga were also affiliated with the United Church of Vila Carrão.' :
+      'Em 4 de outubro de 1964 foi inaugurado o templo atual da Igreja Unida de
+      Vila Carrão, tendo por presidente o pastor Francisco Cardoso. Também eram
+      vinculadas à Unida de Vila Carrão, as congregações de Parque Sevilha,
+      Utinga e Ipiranga.'
+    }}
+  </p>
+  <p>
+    {{ idiomaEN ?
+      'In 2018, the United Church of Vila Carrão celebrated its 60th anniversary. During this period,
+      it fulfilled its mission of preaching the gospel of Jesus to all. Our pastors
+      in these first 60 years' :
+      'Em 2018 a Igreja Unida de Vila Carrão comemorou 60 anos. Nesse período
+      cumpriu sua missão de pregar o evangelho de Jesus a todos. Nossos pastores
+      nesses primeiros 60 anos'
+    }}
+  </p>
 </section>
 
 
-<section class="miniatura">
+<!-- <section class="miniatura">
   <img src="./../../../../../assets/miniatura-antiga.png" alt="">
-</section>
+</section> -->

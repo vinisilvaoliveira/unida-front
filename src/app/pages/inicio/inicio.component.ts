@@ -7,6 +7,7 @@ import { PrincipaisProgramacoesComponent } from './components/principais-program
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { DadosService } from '../../shared/services/dados.service';
 import { BannerComponent } from './components/banner/banner.component';
+import { AdoracaoComunhaoMissaoComponent } from './components/adoracao-comunhao-missao/adoracao-comunhao-missao.component';
 
 @Component({
   selector: 'app-inicio',
@@ -16,6 +17,7 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderIdiomaEMidiaComponent,
     BannerComponent,
     MissaoVisaoValoresComponent,
+    AdoracaoComunhaoMissaoComponent,
     PrincipaisProgramacoesComponent,
     ContatoCamposComponent,
     FooterComponent

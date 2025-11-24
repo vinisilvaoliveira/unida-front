@@ -1,29 +1,29 @@
 <div class="contact">
   <div class="container">
     <div class="contact__title">
-      <h2>{{ idiomaEN ? 'Contact Us' : 'Entre em Contato' }}</h2>
+      <h2>{{ idiomaEN ? 'Contact Us' : 'Enviar mensagem' }}</h2>
   </div>
     <div class="contact__filds">
       <div class="contact__filds--line col-md-8">
           <!-- <label class="label" for="name">Nome</label> -->
           <input class="text-input" onkeyup="this.value=this.value.replace(/[<>$¨¨!@#1234567890*{}]/g,'')"
-              id="name" name="name" autocomplete="off" [placeholder]="idiomaEN ? 'name' : 'nome' " type="text">
+              id="name" name="name" autocomplete="off" [placeholder]="idiomaEN ? 'Name' : 'Nome' " type="text">
       </div>
 
       <div class="contact__filds--line col-md-8">
           <!-- <label class="label" for="email">E-mail</label> -->
-          <input class="text-input" id="email" name="email" autocomplete="off" [placeholder]="idiomaEN ? 'email' : 'e-mail'"
+          <input class="text-input" id="email" name="email" autocomplete="off" [placeholder]="idiomaEN ? 'Email' : 'E-mail'"
               type="email">
       </div>
       <div class="contact__filds--line col-md-8">
         <!-- <label class="label" for="email">E-mail</label> -->
-        <input class="text-input" id="assunto" name="assunto" autocomplete="off" [placeholder]="idiomaEN ? 'subject' : 'assunto'"
+        <input class="text-input" id="assunto" name="assunto" autocomplete="off" [placeholder]="idiomaEN ? 'Subject' : 'Assunto'"
             type="text">
     </div>
 
       <div class="contact__filds--line col-md-8">
           <!-- <label class="label" for="mensagem">Mensagem</label> -->
-          <textarea class="text-input txt-mensagem" [placeholder]="idiomaEN ? 'message' : 'mensagem'" autocomplete="off" id="text_mensagem"
+          <textarea class="text-input txt-mensagem" [placeholder]="idiomaEN ? 'Message' : 'Mensagem'" autocomplete="off" id="text_mensagem"
               rows="3" onkeyup="this.value=this.value.replace(/[<>$¨¨#*{}]/g,'')"></textarea>
       </div>
 

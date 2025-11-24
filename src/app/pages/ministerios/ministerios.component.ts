@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { DadosService } from '../../shared/services/dados.service';
 
 @Component({
   selector: 'app-ministerios',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './ministerios.component.html',
   styleUrl: './ministerios.component.scss'
 })
-export class MinisteriosComponent {
+export class MinisteriosComponent implements OnInit {
+  private dadosService = inject(DadosService);
+  idiomaEN: any;
 
+  ngOnInit(): void {
+    this.idiomaEN = this.dadosService.getIdioma();
+  }
 }

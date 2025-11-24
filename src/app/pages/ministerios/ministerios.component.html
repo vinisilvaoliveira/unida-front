@@ -1,27 +1,27 @@
 <section>
   <div class="container">
     <div class="titulo">
-      <h1>Ministerios</h1>
+      <h1>{{ idiomaEN() ? 'Ministries' : 'Ministerios' }}</h1>
     </div>
     <div class="ministerios">
       <div class="foto">
-          <h2>Crianças</h2>
-          <img src="./assets/ministerio-crianca.png" alt="">
+          <h2>{{ idiomaEN() ? 'Children' : 'Crianças' }}</h2>
+          <img src="./assets/ministerios/ministerio-crianca.jpg" alt="">
       </div>
       <div class="foto">
-          <h2>Jovens</h2>
-          <img src="./assets/jovens.png" alt="">
+          <h2>{{ idiomaEN() ? 'Young' : 'Jovens' }}</h2>
+          <img src="./assets/ministerios/jovens.jpg" alt="">
       </div>
   </div>
 
   <div class="ministerios">
     <div class="foto">
         <h2>Teens</h2>
-        <img src="./assets/teens.png" alt="">
+        <img src="./assets/ministerios/teens.png" alt="">
     </div>
     <div class="jovens foto">
-        <h2>Louvor</h2>
-        <img src="./assets/louvor.png" alt="">
+        <h2>{{ idiomaEN() ? 'Praise Group' : 'Louvor' }}</h2>
+        <img src="./assets/programacao/domingo.jpg" alt="">
     </div>
 </div>
 </div>

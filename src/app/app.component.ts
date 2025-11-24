@@ -19,6 +19,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 })
 export class AppComponent {
   onActivate(): void {
-    window.scroll(0, 0)
+    console.log('passou')
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   }
 }

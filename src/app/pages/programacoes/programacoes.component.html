@@ -1,67 +1,79 @@
 <section>
   <div class="titulo-programacao">
     <div class="container">
-
-      <h1>Programação da Unida</h1>
+      <h1>{{ idiomaEN() ? 'Unida Programming' : 'Programação Unida' }}</h1>
     </div>
   </div>
 
-  <div class="programacao">
-    <div class="colunas">
-      <h2>Começando com Deus</h2>
-      <p>segunda-feira</p>
-      <span><i class="bi bi bi-check-all"></i> 8h - Presencial</span>
+  <div class="programacao container">
+    <div class="segunda card">
+      <div class="transparencia">
+        <h2>{{ idiomaEN() ? 'Monday' : 'Segunda-feira' }}</h2>
+        <ul>
+          <li> 
+            <span class="horario">{{ idiomaEN() ? '8AM Starting with God' : '8h Começando com Deus' }}</span> 
+          <br>
+          <span>{{ idiomaEN() ? 'In Person' : 'Encontro Presencial' }}</span>
+          </li>
+          <li> 
+            <span class="horario">{{ idiomaEN() ? '8PM Families in Prayer' : '20h Famílias em Oração' }}</span>
+          <br>
+          <span>Online</span>
+          <span> 
+            <i class="bi bi-youtube"></i>
+          </span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="colunas meio">
-      <h2>Familias em oração</h2>
-      <p>segunda-feira</p>
-      <span><i class="bi bi bi-check-all"></i> 20h - Encontro online</span>
+    <div class="card domingo">
+      <div class="transparencia">      
+      <h2>{{ idiomaEN() ? 'Sunday' : 'Domingo' }}</h2>
+        <ul>
+          <li> 
+            <span class="horario">{{ idiomaEN() ? '9am Baptism Class' : '9h Aula de Batismo' }}</span> 
+          <br>
+          <span>{{ idiomaEN() ? 'In Person' : 'Encontro Presencial' }}</span>
+          </li>
+          <li> 
+            <span class="horario">{{ idiomaEN() ? '10:30am Families in Prayer' : '10h30 Famílias em Oração' }}</span>
+          <br>
+          <span>{{ idiomaEN() ? 'In Person and Online' : 'Encontro Presencial e Online' }}</span>
+          <span> 
+            <i class="bi bi-youtube"></i>
+          </span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="colunas">
-      <h2>Culto</h2>
-      <p>domingo</p>
-      <span><i class="bi bi bi-check-all"></i> 9h45 - Oração</span><br>
-      <span><i class="bi bi bi-check-all"></i> 10h30 - Celebração </span>
+    <div class="card festecristo">
+      <div class="transparencia">
+        <h2>IV Feste Cristo</h2>
+        <ul>
+          <li> 
+            <span class="horario">29 de Novembro às 14h</span> 
+          <br>
+          <span>Garanta seu ingresso</span>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <div class="card teens">
+      <div class="transparencia">
+        <h2>Unidão Teens</h2>
+        <ul>
+          <li> 
+            <span class="horario">13 de Dezembro às 9h</span> 
+          <br>
+          <span>Incrições com os líderes</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
-
-
-  <div class="programacao">
-    <div class="colunas meio">
-      <h2>Unidão Parque</h2>
-      <p>sábado</p>
-      <span><i class="bi bi bi-check-all"></i>14h - Tragam seus teens para participarem desse encotro especial </span>
-    </div>
-
-    <div class="colunas">
-      <h2>Encontro de casais</h2>
-      <p>sábado</p>
-      <span><i class="bi bi bi-check-all"></i> 19h30 - Todos os casais</span>
-    </div>
-
-    <div class="colunas meio">
-      <h2>Batismo</h2>
-      <p>domingo</p>
-      <span><i class="bi bi bi-check-all"></i> Aulas para o batismo, procurar a Miss Marisa e Pb Wilson</span><br>
-    </div>
-  </div>
-
-
-  <div class="programacao">
-
-    <div class="colunas">
-
-    </div>
-    <div class="colunas meio">
-      <h2>Estudo Bíblico</h2>
-      <p>quinta-feira</p>
-      <span><i class="bi bi bi-check-all"></i> Mais informações com o Pb Lino</span>
-    </div>
-    <div class="colunas">
-
-    </div>
-  </div>
 </section>
