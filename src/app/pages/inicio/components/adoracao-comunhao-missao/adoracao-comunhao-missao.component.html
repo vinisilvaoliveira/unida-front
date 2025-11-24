@@ -1,1 +1,10 @@
-<!-- <p>adoracao-comunhao-missao works!</p> -->
+    <ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                       >
+
+            <div ngxSlickItem class="slide" *ngFor=" let slide of slides">
+                  <img src="{{ slide.img }}" alt="" class="img-style">
+            </div>
+        
+    </ngx-slick-carousel>
