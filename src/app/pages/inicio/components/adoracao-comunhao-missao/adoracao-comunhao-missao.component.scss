@@ -1,10 +1,62 @@
-::ng-deep .slick-prev:before, .slick-next:before {
-    color: #f1f!important;
-}
+@import "./../../../../styles/variables.scss";
+
 
 .img-style {
     margin-left: auto;
     margin-right: auto;
-    height: 250px;
-    width: 250px;
+    width: 100%;
+}
+
+.carousel {
+    overflow: hidden;
+    .slideshow-container-adoracao {
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-size: 5rem;
+            border-radius: 10px;
+            color: $cor-branca;
+            background-color: $fundo-preto-transparencia;
+            padding: 10px;
+            text-align: center;
+        }    
+        .texto {
+            h2 {
+                font-weight: 800;
+                font-size: 4rem;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.animation {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
