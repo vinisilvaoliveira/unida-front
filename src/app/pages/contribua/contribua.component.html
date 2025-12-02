@@ -4,20 +4,21 @@
 
   <div class="container">
     <div class="descricao">
-      <p>É por meio dos dízimos e ofertas que podemos ajudar famílias com cestas básicas, aquisição de medicamentos, além do café da manhã aos domingos, reformas e melhorias da igreja.</p>
+      <p>É por meio dos dízimos e ofertas que podemos ajudar famílias com cestas básicas, aquisição de medicamentos,
+        além do café da manhã aos domingos, reformas e melhorias da igreja.</p>
     </div>
     <div class="transparencia">
       <div class="pix">
         <h2>Chave Pix - CPNJ</h2>
         <div class="copiar-pix">
-          <span>05.552.672.0001-80</span>
+          <span>{{textoPix}}</span>
           <button class="btn" (click)="copiarTexto()"><i class="bi bi-copy"></i>copiar</button>
         </div>
       </div>
-        <div class="pix">
-          <h2>Método Online</h2>
-          <span>Em breve</span>
-        </div>
+      <div class="qrcode">
+        <h2>QR Code</h2>
+        <img src="/assets/contribuicao/QRCode-Oferta.jpg" alt="Imagem do QRCode para pagamento via pix">
+      </div>
     </div>
   </div>
 </section>

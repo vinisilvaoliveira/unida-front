@@ -9,8 +9,8 @@ import copy from 'copy-to-clipboard';
   styleUrl: './contribua.component.scss'
 })
 export class ContribuaComponent {
-
+  textoPix = "iunidavilacarrao@gmail.com"
   copiarTexto() {
-    copy('05.552.672.0001-80');
+    copy(this.textoPix);
   }
 }

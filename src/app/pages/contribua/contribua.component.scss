@@ -18,11 +18,11 @@
   }
   .transparencia {
     display: flex;
-    justify-content: center;
+    align-items: center;
     justify-content: space-between;
     padding: 30px 0;
     .pix {
-      width: 48%;
+      width: 50%;
       background: linear-gradient(90deg, rgb(248, 139, 70) 0%, rgb(228, 101, 66) 50%, rgb(210, 62, 62) 100%);
       display: flex;
       justify-content: center;
@@ -58,7 +58,13 @@
           }
         }
       }
-
+    }
+    .qrcode{
+      text-align: center;
+      width: 50%;
+      img{
+        width: 60%;
+      }
     }
   }
 }
@@ -82,6 +88,12 @@
     .transparencia {
       flex-direction: column;
       width: 100%;
+      .qrcode{
+        width: 60%;
+        img{
+          width: 100%;
+        }
+      }
       .pix {
         width: 100%;
         .copiar-pix {
